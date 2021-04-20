@@ -1,0 +1,70 @@
+<html>
+    <head><title>building paragraphs</title></head>
+<body>
+<span>1. </span>
+<input type="text" id="para1" placeholder="input1">
+<br><br>
+<span>2. </span>
+<input type="text" id="para2" placeholder="input2">
+<br><br>
+<span>3. </span>
+<input type="text" id="para3" placeholder="input3">
+<br><br>
+<span>4. </span>
+<input type="text" id="para4" placeholder="input4">
+<br><br>
+<span>5. </span>
+<input type="text" id="para5" placeholder="input5">
+<br><br>
+<span>6. </span>
+<input type="text" id="para6" placeholder="input6">
+<br><br>
+<div id="showpara1"></div>
+<button onclick="getpara1()">Get Paragraph 1</button>
+<br>
+
+
+<span>1. </span>
+<input type="text" id="para1" placeholder="input1">
+<br><br>
+<span>2. </span>
+<input type="text" id="para2" placeholder="input2">
+<br><br>
+<span>3. </span>
+<input type="text" id="para3" placeholder="input3">
+<br><br>
+<span>4. </span>
+<input type="text" id="para4" placeholder="input4">
+<br><br>
+<span>5. </span>
+<input type="text" id="para5" placeholder="input5">
+<br><br>
+<span>6. </span>
+<input type="text" id="para6" placeholder="input6">
+<br><br>
+<div id="showpara1"></div>
+<button onclick="getpara1()">Get Paragraph 2</button>
+<br>
+<script>
+   function getpara1()
+	{
+		var inputs = [];
+		for(var i = 1 ; i <=6 ; i++)
+		{
+			inputs.push(document.getElementById("para" + i).value);
+		}
+	document.getElementById("showpara1").innerHTML = inputs.join(". ");
+	}
+
+	function getParagraph2()
+	{
+		var inputs = [];
+		for(var i = 1 ; i <=6 ; i++)
+		{
+			inputs.push(document.getElementById("para" + i).value);
+		}
+	document.getElementById("showpara2").innerHTML = inputs.join(". ");
+	}
+</script>
+    </body>
+    </html>
